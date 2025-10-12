@@ -1,6 +1,9 @@
 import { Button, Item, List } from "./FeedbackStyled";
+import { FeedbackContext } from "../../context/FeedbackContext";
+import { useContext } from "react";
 
-export const Feedback = ({ onLeaveFeedback }) => {
+export const Feedback = () => {
+  const { onLeaveFeedback } = useContext(FeedbackContext);
   return (
     <List onClick={onLeaveFeedback}>
       <Item>

@@ -1,7 +1,9 @@
 import { Item, List } from "./StatisticsStyled";
+import { useContext } from "react";
+import { FeedbackContext } from "../../context/FeedbackContext";
 
-export const Statistics = ({ good, neutral, bad }) => {
-  console.log();
+export const Statistics = () => {
+  const { good, neutral, bad } = useContext(FeedbackContext);
   return (
     <List>
       <Item>Good: {good}</Item>

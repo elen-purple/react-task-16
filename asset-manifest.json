@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/react-task-16/static/js/main.7a3b87d3.js",
+    "main.js": "/react-task-16/static/js/main.eeb70e1c.js",
     "index.html": "/react-task-16/index.html",
-    "main.7a3b87d3.js.map": "/react-task-16/static/js/main.7a3b87d3.js.map"
+    "main.eeb70e1c.js.map": "/react-task-16/static/js/main.eeb70e1c.js.map"
   },
   "entrypoints": [
-    "static/js/main.7a3b87d3.js"
+    "static/js/main.eeb70e1c.js"
   ]
 }

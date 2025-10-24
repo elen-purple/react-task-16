@@ -15,10 +15,10 @@ export const Button = styled.button`
 
 export const Item = styled.li`
   &:nth-child(1) ${Button} {
-    background-color: #370303ff;
+    background-color: #082004ff;
 
     &:hover {
-      background-color: #aa0d0dff;
+      background-color: #1a680cff;
     }
   }
 
@@ -31,10 +31,10 @@ export const Item = styled.li`
   }
 
   &:nth-child(3) ${Button} {
-    background-color: #082004ff;
+    background-color: #370303ff;
 
     &:hover {
-      background-color: #1a680cff;
+      background-color: #aa0d0dff;
     }
   }
 `;

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { createContext } from "react";
 
 export const FeedbackContext = createContext(null);
@@ -7,6 +7,7 @@ export const FeedbackProvider = ({ children }) => {
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
+  const lastChoice = useRef("_____");
 
   const onLeaveFeedback = (e) => {
     switch (e.target.id) {
@@ -21,10 +22,13 @@ export const FeedbackProvider = ({ children }) => {
         break;
       default:
     }
+    lastChoice.current = e.target.id;
   };
 
   return (
-    <FeedbackContext.Provider value={{ good, neutral, bad, onLeaveFeedback }}>
+    <FeedbackContext.Provider
+      value={{ good, neutral, bad, onLeaveFeedback, lastChoice }}
+    >
       {children}
     </FeedbackContext.Provider>
   );
